@@ -13,6 +13,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .frosty {
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: saturate(180%) blur(10px);

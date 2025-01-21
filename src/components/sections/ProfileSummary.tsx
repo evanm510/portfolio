@@ -7,7 +7,7 @@ import { Loading } from "../Loading";
 
 export const ProfileSummary = () => {
   return (
-    <div className="flex flex-row gap-12 items-center">
+    <section id="home" className="h-screen flex flex-row gap-12 items-center">
       <div className="flex flex-col gap-4">
         <div className="text-5xl">Evan Monroe</div>
         <div className="w-80">
@@ -19,7 +19,7 @@ export const ProfileSummary = () => {
       <div className="w-[300px] h-[300px] rounded-full overflow-hidden">
         <Image src="/headshot.jpeg" alt="Headshot" width={300} height={300} />
       </div>
-    </div>
+    </section>
   );
 };
 
