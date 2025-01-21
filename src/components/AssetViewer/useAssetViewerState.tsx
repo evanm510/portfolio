@@ -19,12 +19,10 @@ export default create<AssetViewerState>((set) => ({
   },
   fileType: "",
   setFileType: (fileType) => {
-    console.log("file type: ", fileType);
     set({ fileType });
   },
   isOpen: false,
   setIsOpen: (isOpen) => {
-    console.log("is Open: ", isOpen);
     set({ isOpen });
   },
   isFullScreen: false,

@@ -29,7 +29,6 @@ const Buttons = () => {
     <div className="flex flex-row gap-10">
       <Button
         onClick={() => {
-          console.log("opening asset viewer");
           openAssetViewer({
             name: "Resume",
             type: "pdf",

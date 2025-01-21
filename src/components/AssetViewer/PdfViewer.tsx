@@ -83,8 +83,6 @@ export default ({
     setPageWidth(pageWidth / 1.15);
   };
 
-  console.log("PDF Viewer Open");
-
   return (
     <div>
       <PdfViewerHeader

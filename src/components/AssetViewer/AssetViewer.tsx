@@ -13,8 +13,6 @@ export function useAssetViewer() {
     useAssetViewerState((state) => state);
 
   const openAssetViewer = useCallback((asset: Asset) => {
-    console.log("Opening asset viewer with asset:", asset);
-
     setAsset(asset);
     setFileType(asset.type);
     setIsOpen(true);
@@ -67,7 +65,6 @@ export default memo(() => {
   }, []);
 
   const Content = () => {
-    console.log("content asset: ", asset);
     if (!asset) return null;
 
     switch (fileType) {
@@ -111,8 +108,6 @@ export default memo(() => {
   const modalWindowClassName = isFullScreen
     ? `frosty-dark w-[100vw] h-[100vh] ${isOpenClassName}`
     : `frosty-dark border rounded-[1rem] shadow-lg w-[94vw] h-[94vh] ${isOpenClassName}`;
-
-  console.log("asset viewer is open: ");
 
   return (
     <>
