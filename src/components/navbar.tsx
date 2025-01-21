@@ -7,42 +7,42 @@ export const NavBar = () => {
         <div className="text-gray-200">Evan Monroe</div>
         <ul className="flex space-x-8">
           <li>
-            <Link href="/">
+            <Link href="#home">
               <div className="hover:scale-110 transform transition-transform duration-300">
                 Home
               </div>
             </Link>
           </li>
           <li>
-            <Link href="/">
+            <Link href="#about">
               <div className="hover:scale-110 transform transition-transform duration-300">
                 About Me
               </div>
             </Link>
           </li>
           <li>
-            <Link href="/">
+            <Link href="#experience">
               <div className="hover:scale-110 transform transition-transform duration-300">
                 Professional Experience
               </div>
             </Link>
           </li>
           <li>
-            <Link href="/">
+            <Link href="#projects">
               <div className="hover:scale-110 transform transition-transform duration-300">
                 Projects
               </div>
             </Link>
           </li>
           <li>
-            <Link href="/">
+            <Link href="#hobbies">
               <div className="hover:scale-110 transform transition-transform duration-300">
                 Hobbies and Interests
               </div>
             </Link>
           </li>
           <li>
-            <Link href="/">
+            <Link href="#contact">
               <div className="hover:scale-110 transform transition-transform duration-300">
                 Contact
               </div>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import AssetViewerHeader from "./AssetViewerHeader";
 import { Flex } from "@radix-ui/themes";
-import { Loading } from "../loading";
+import { Loading } from "../Loading";
 import { Asset } from "@/types/global";
 
 type VideoViewerProps = {
