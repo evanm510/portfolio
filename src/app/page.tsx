@@ -2,7 +2,7 @@
 
 import { ProfileSummary } from "@/components/sections/ProfileSummary";
 import AboutMe from "@/components/sections/AboutMe";
-import ProfessionalExperience from "@/components/sections/ProfessionalExperience";
+import ProfessionalExperience from "@/components/sections/Experience";
 import Projects from "@/components/sections/Projects";
 import Hobbies from "@/components/sections/OtherInterests";
 import Contact from "@/components/sections/Contact";

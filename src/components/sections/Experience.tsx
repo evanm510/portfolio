@@ -112,7 +112,7 @@ export default () => {
   return (
     <section id="experience" className="scroll-mt-20">
       <div className="flex flex-col gap-6 items-center">
-        <div className="text-3xl mx-auto">Professional Experience</div>
+        <div className="text-3xl mx-auto">Experience</div>
         <ExperienceSection
           title={sendKitsExperienceData.title}
           dateRange={sendKitsExperienceData.dateRange}
