@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { Loading } from "../Loading_temp";
+import { Loading } from "../Loading";
 import AssetViewerHeader, { ZoomControl } from "./AssetViewerHeader";
 import { Asset } from "@/types/global";
 import { pdfjs } from "react-pdf";

@@ -1,9 +1,9 @@
 import Image from "next/image";
 
-import { Button } from "@/components/Button_temp";
-import { IconButton } from "@/components/IconButton_temp";
+import { Button } from "@/components/Button";
+import { IconButton } from "@/components/IconButton";
 import { useAssetViewer } from "../AssetViewer/AssetViewer";
-import { Loading } from "../Loading_temp";
+import { Loading } from "../Loading";
 
 export const ProfileSummary = () => {
   return (

@@ -7,7 +7,7 @@ import {
   TransformComponent,
   useControls,
 } from "react-zoom-pan-pinch";
-import { Loading } from "../Loading_temp";
+import { Loading } from "../Loading";
 
 type ImageViewerHeaderProps = {
   asset: { name: string; type: string; hostPath: string };
