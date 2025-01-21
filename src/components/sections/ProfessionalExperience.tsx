@@ -17,12 +17,12 @@ const sendKitsExperienceData = {
   technologies: [
     { imageSrc: "/tech-logos/react.svg", text: "React.js" },
     { imageSrc: "/tech-logos/next.js.svg", text: "Next.js" },
-    { imageSrc: "/tech-logos/javascript.svg", text: "JavaScript" },
+    { imageSrc: "/tech-logos/typescript.svg", text: "TypeScript" },
     { imageSrc: "/tech-logos/html.svg", text: "HTML" },
     { imageSrc: "/tech-logos/css.svg", text: "CSS" },
     { imageSrc: "/tech-logos/mysql.svg", text: "MySQL" },
     { imageSrc: "/tech-logos/prisma.svg", text: "Prisma ORM" },
-    { imageSrc: "/tech-logos/aws.svg", text: "AWS" },
+    { imageSrc: "/tech-logos/awswhite.svg", text: "AWS" },
   ],
 };
 
@@ -46,7 +46,7 @@ const threadCloudExperienceData = {
     { imageSrc: "/tech-logos/css.svg", text: "CSS" },
     { imageSrc: "/tech-logos/mysql.svg", text: "MySQL" },
     { imageSrc: "/tech-logos/prisma.svg", text: "Prisma ORM" },
-    { imageSrc: "/tech-logos/aws.svg", text: "AWS" },
+    { imageSrc: "/tech-logos/awswhite.svg", text: "AWS" },
   ],
 };
 
@@ -71,7 +71,7 @@ export default () => {
           description={threadCloudExperienceData.description}
           imageSrc={threadCloudExperienceData.imageSrc}
           learnMoreUrl={threadCloudExperienceData.learnMoreUrl}
-          technologies={sendKitsExperienceData.technologies}
+          technologies={threadCloudExperienceData.technologies}
         />
       </div>
     </section>

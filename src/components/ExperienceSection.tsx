@@ -44,7 +44,7 @@ export default ({
           layout="intrinsic"
         />
       </div>
-      <div className="pt-4 flex flex-row gap-6">
+      <div className="pt-4 flex flex-row justify-between">
         <Button
           onClick={() => {
             window.open(learnMoreUrl);
