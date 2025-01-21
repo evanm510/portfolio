@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 import { NavBar } from "@/components/navbar";
+import AssetViewer from "@/components/AssetViewer/AssetViewer";
 
 export const metadata: Metadata = {
   title: "Evan Monroe",
@@ -18,6 +19,7 @@ export default function RootLayout({
         {" "}
         <NavBar />
         {children}
+        <AssetViewer />
       </body>
     </html>
   );
