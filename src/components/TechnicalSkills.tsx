@@ -34,25 +34,25 @@ const tools = [
 
 export default () => {
   return (
-    <div className="w-[90%] bg-secondary py-4 px-6 rounded-lg">
+    <div className="bg-secondary py-4 px-6 rounded-lg">
       <div className="flex items-center">
         <div className="mx-auto text-xl">Technical Skills</div>
       </div>
-      <div className="mb-3">
-        <div className="pb-1">Languages</div>
-        <TechLogoList logos={languages} size={50} />
+      <div className="mb-8">
+        <div className="pb-2">Languages</div>
+        <TechLogoList logos={languages} size={60} />
       </div>
-      <div className="mb-3">
-        <div className="pb-1">Front-end Technologies</div>
-        <TechLogoList logos={frontend} size={50} />
+      <div className="mb-8">
+        <div className="pb-2">Front-end Technologies</div>
+        <TechLogoList logos={frontend} size={60} />
       </div>
-      <div className="mb-3">
-        <div className="pb-1">Backend and Databases</div>
-        <TechLogoList logos={backend} size={50} />
+      <div className="mb-8">
+        <div className="pb-2">Backend and Databases</div>
+        <TechLogoList logos={backend} size={60} />
       </div>
-      <div className="mb-3">
-        <div className="pb-1">Tools and Platforms</div>
-        <TechLogoList logos={tools} size={50} />
+      <div className="">
+        <div className="pb-2">Tools and Platforms</div>
+        <TechLogoList logos={tools} size={60} />
       </div>
     </div>
   );
