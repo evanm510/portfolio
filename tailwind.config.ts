@@ -12,6 +12,7 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         secondary: "#454545",
+        button: "#825A8D",
       },
     },
   },

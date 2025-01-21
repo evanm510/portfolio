@@ -1,7 +1,11 @@
+"use client";
+
+import { ProfileSummary } from "@/components/profileSummary";
+
 export default function Home() {
   return (
-    <div>
-      This is my app.
+    <div className="flex items-center justify-center h-screen">
+      <ProfileSummary />
     </div>
   );
 }
