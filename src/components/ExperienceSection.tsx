@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Button } from "@/components/Button";
+import { TechLogoList } from "./TechLogos";
 
 type ExperienceSectionProps = {
   title: string;
@@ -8,6 +9,7 @@ type ExperienceSectionProps = {
   description: string[];
   imageSrc: string;
   learnMoreUrl: string;
+  technologies: { imageSrc: string; text: string }[];
 };
 
 export default ({
@@ -17,6 +19,7 @@ export default ({
   description,
   imageSrc,
   learnMoreUrl,
+  technologies,
 }: ExperienceSectionProps) => {
   return (
     <div className="w-[90%] bg-secondary p-6 rounded-lg">
@@ -41,14 +44,17 @@ export default ({
           layout="intrinsic"
         />
       </div>
-      <div className="pt-4">
-        <Button
-          onClick={() => {
-            window.open(learnMoreUrl);
-          }}
-        >
-          Learn More
-        </Button>
+      <div className="pt-4 flex flex-row justify-between items center">
+        <div className="my-auto">
+          <Button
+            onClick={() => {
+              window.open(learnMoreUrl);
+            }}
+          >
+            Learn More
+          </Button>
+        </div>
+        <TechLogoList logos={technologies} size={40} />
       </div>
     </div>
   );

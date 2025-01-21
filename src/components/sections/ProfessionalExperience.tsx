@@ -14,6 +14,16 @@ const sendKitsExperienceData = {
   ],
   imageSrc: "/SendKitsImage.png",
   learnMoreUrl: "https://www.sendkits.io/",
+  technologies: [
+    { imageSrc: "/tech-logos/react.svg", text: "React.js" },
+    { imageSrc: "/tech-logos/next.js.svg", text: "Next.js" },
+    { imageSrc: "/tech-logos/typescript.svg", text: "TypeScript" },
+    { imageSrc: "/tech-logos/html.svg", text: "HTML" },
+    { imageSrc: "/tech-logos/css.svg", text: "CSS" },
+    { imageSrc: "/tech-logos/mysql.svg", text: "MySQL" },
+    { imageSrc: "/tech-logos/prisma.svg", text: "Prisma ORM" },
+    { imageSrc: "/tech-logos/awswhite.svg", text: "AWS" },
+  ],
 };
 
 const threadCloudExperienceData = {
@@ -28,6 +38,16 @@ const threadCloudExperienceData = {
   ],
   imageSrc: "/SendKitsImage.png",
   learnMoreUrl: "https://app.threadcloud.net/",
+  technologies: [
+    { imageSrc: "/tech-logos/react.svg", text: "React.js" },
+    { imageSrc: "/tech-logos/next.js.svg", text: "Next.js" },
+    { imageSrc: "/tech-logos/javascript.svg", text: "JavaScript" },
+    { imageSrc: "/tech-logos/html.svg", text: "HTML" },
+    { imageSrc: "/tech-logos/css.svg", text: "CSS" },
+    { imageSrc: "/tech-logos/mysql.svg", text: "MySQL" },
+    { imageSrc: "/tech-logos/prisma.svg", text: "Prisma ORM" },
+    { imageSrc: "/tech-logos/awswhite.svg", text: "AWS" },
+  ],
 };
 
 export default () => {
@@ -42,6 +62,7 @@ export default () => {
           description={sendKitsExperienceData.description}
           imageSrc={sendKitsExperienceData.imageSrc}
           learnMoreUrl={sendKitsExperienceData.learnMoreUrl}
+          technologies={sendKitsExperienceData.technologies}
         />
         <ExperienceSection
           title={threadCloudExperienceData.title}
@@ -50,6 +71,7 @@ export default () => {
           description={threadCloudExperienceData.description}
           imageSrc={threadCloudExperienceData.imageSrc}
           learnMoreUrl={threadCloudExperienceData.learnMoreUrl}
+          technologies={threadCloudExperienceData.technologies}
         />
       </div>
     </section>
