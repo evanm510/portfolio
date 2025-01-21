@@ -38,19 +38,19 @@ export default () => {
       <div className="flex items-center">
         <div className="mx-auto text-xl">Technical Skills</div>
       </div>
-      <div className="mb-2">
+      <div className="mb-3">
         <div className="pb-1">Languages</div>
         <TechLogoList logos={languages} size={50} />
       </div>
-      <div className="mb-2">
+      <div className="mb-3">
         <div className="pb-1">Front-end Technologies</div>
         <TechLogoList logos={frontend} size={50} />
       </div>
-      <div className="mb-2">
+      <div className="mb-3">
         <div className="pb-1">Backend and Databases</div>
         <TechLogoList logos={backend} size={50} />
       </div>
-      <div className="mb-2">
+      <div className="mb-3">
         <div className="pb-1">Tools and Platforms</div>
         <TechLogoList logos={tools} size={50} />
       </div>
