@@ -1,15 +1,16 @@
 import Image from "next/image";
 import { Button } from "@/components/Button";
 import { TechLogoList } from "./TechLogos";
+import { ImageSlider } from "./ImageSlider";
 
 type ExperienceSectionProps = {
   title: string;
   dateRange: string;
   position: string;
   description: string[];
-  imageSrc: string;
   learnMoreUrl: string;
   technologies: { imageSrc: string; text: string }[];
+  images: { imageSrc: string; alt: string }[];
 };
 
 export default ({
@@ -17,9 +18,9 @@ export default ({
   dateRange,
   position,
   description,
-  imageSrc,
   learnMoreUrl,
   technologies,
+  images,
 }: ExperienceSectionProps) => {
   return (
     <div className="w-[90%] bg-secondary p-6 rounded-lg">
@@ -36,13 +37,7 @@ export default ({
             ))}
           </ul>
         </div>
-        <Image
-          src={imageSrc}
-          alt={`${title} Screenshot`}
-          height={10}
-          width={400}
-          layout="intrinsic"
-        />
+        <ImageSlider images={images} />
       </div>
       <div className="pt-4 flex flex-row justify-between items center">
         <div className="my-auto">
