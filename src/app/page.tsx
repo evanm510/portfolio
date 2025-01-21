@@ -1,6 +1,6 @@
 "use client";
 
-import { ProfileSummary } from "@/components/profileSummary";
+import { ProfileSummary } from "@/components/ProfileSummary";
 
 export default function Home() {
   return (
