@@ -12,7 +12,6 @@ const sendKitsExperienceData = {
     "Developed and integrated an image cropping feature to improve user control over image editing.",
     "Implemented various other APIs, UI components, database scripts, and third-party integrations.",
   ],
-  imageSrc: "/SendKitsImage.png",
   learnMoreUrl: "https://www.sendkits.io/",
   technologies: [
     { imageSrc: "/tech-logos/react.svg", text: "React.js" },
@@ -23,6 +22,44 @@ const sendKitsExperienceData = {
     { imageSrc: "/tech-logos/mysql.svg", text: "MySQL" },
     { imageSrc: "/tech-logos/prisma.svg", text: "Prisma ORM" },
     { imageSrc: "/tech-logos/awswhite.svg", text: "AWS" },
+  ],
+  images: [
+    {
+      imageSrc: "/SendKitsScreenshots/SK_DemoKit.png",
+      alt: "Screenshot of Demo Kit",
+    },
+    {
+      imageSrc: "/SendKitsScreenshots/SK_AssetManager1.png",
+      alt: "Screenshot of Asset Manager 1",
+    },
+    {
+      imageSrc: "/SendKitsScreenshots/SK_AssetManager2.png",
+      alt: "Screenshot of Asset Manager 2",
+    },
+    {
+      imageSrc: "/SendKitsScreenshots/SK_AssetManager3.png",
+      alt: "Screenshot of Asset Manager 3",
+    },
+    {
+      imageSrc: "/SendKitsScreenshots/SK_DemoKit2.png",
+      alt: "Screenshot of Demo Kit 2",
+    },
+    {
+      imageSrc: "/SendKitsScreenshots/SK_DemoKit3.png",
+      alt: "Screenshot of Demo Kit 3",
+    },
+    {
+      imageSrc: "/SendKitsScreenshots/SK_Home.png",
+      alt: "Screenshot of Home screen",
+    },
+    {
+      imageSrc: "/SendKitsScreenshots/SK_KitBuilder.png",
+      alt: "Screenshot of Kit Builder",
+    },
+    {
+      imageSrc: "/SendKitsScreenshots/SK_ViewerScreen.png",
+      alt: "Screenshot of Viewer Screen",
+    },
   ],
 };
 
@@ -36,7 +73,6 @@ const threadCloudExperienceData = {
     "Developed RESTful APIs to handle data processing and implement business logic",
     "Assisted in database schema design and implemented changes to meet application requirements.",
   ],
-  imageSrc: "/SendKitsImage.png",
   learnMoreUrl: "https://app.threadcloud.net/",
   technologies: [
     { imageSrc: "/tech-logos/react.svg", text: "React.js" },
@@ -47,6 +83,28 @@ const threadCloudExperienceData = {
     { imageSrc: "/tech-logos/mysql.svg", text: "MySQL" },
     { imageSrc: "/tech-logos/prisma.svg", text: "Prisma ORM" },
     { imageSrc: "/tech-logos/awswhite.svg", text: "AWS" },
+  ],
+  images: [
+    {
+      imageSrc: "/ThreadCloudScreenshots/ThreadCloud_img1.png",
+      alt: "ThreadCloud Home Screen",
+    },
+    {
+      imageSrc: "/ThreadCloudScreenshots/ThreadCloud_img2.png",
+      alt: "ThreadCloud Project Screen",
+    },
+    {
+      imageSrc: "/ThreadCloudScreenshots/ThreadCloud_img3.png",
+      alt: "ThreadCloud Task Screen",
+    },
+    {
+      imageSrc: "/ThreadCloudScreenshots/ThreadCloud_img4.png",
+      alt: "ThreadCloud Projects Screen",
+    },
+    {
+      imageSrc: "/ThreadCloudScreenshots/ThreadCloud_img5.png",
+      alt: "ThreadCloud Profile Screen",
+    },
   ],
 };
 
@@ -60,7 +118,7 @@ export default () => {
           dateRange={sendKitsExperienceData.dateRange}
           position={sendKitsExperienceData.position}
           description={sendKitsExperienceData.description}
-          imageSrc={sendKitsExperienceData.imageSrc}
+          images={sendKitsExperienceData.images}
           learnMoreUrl={sendKitsExperienceData.learnMoreUrl}
           technologies={sendKitsExperienceData.technologies}
         />
@@ -69,7 +127,7 @@ export default () => {
           dateRange={threadCloudExperienceData.dateRange}
           position={threadCloudExperienceData.position}
           description={threadCloudExperienceData.description}
-          imageSrc={threadCloudExperienceData.imageSrc}
+          images={threadCloudExperienceData.images}
           learnMoreUrl={threadCloudExperienceData.learnMoreUrl}
           technologies={threadCloudExperienceData.technologies}
         />
