@@ -37,7 +37,7 @@ export function ImageSlider({ images }: ImageSliderProps) {
             src={imageSrc}
             alt={alt}
             aria-hidden={imageIndex !== index}
-            className={`object-cover w-full h-full flex-shrink-0 flex-grow-0 transition-transform duration-300 ease-in-out`}
+            className={`object-cover w-full h-full flex-shrink-0 flex-grow-0 transition-transform duration-300 ease-in-out cursor-pointer`}
             style={{ transform: `translateX(-${100 * imageIndex}%)` }}
             onClick={() => {
               openAssetViewer({
