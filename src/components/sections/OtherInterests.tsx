@@ -1,7 +1,7 @@
 export default () => {
   return (
     <section
-      id="hobbies"
+      id="other-interests"
       className="scroll-mt-20 h-screen flex items-center justify-center"
     >
       <div>Hobbies</div>
