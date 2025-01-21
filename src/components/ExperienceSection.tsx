@@ -44,14 +44,16 @@ export default ({
           layout="intrinsic"
         />
       </div>
-      <div className="pt-4 flex flex-row justify-between">
-        <Button
-          onClick={() => {
-            window.open(learnMoreUrl);
-          }}
-        >
-          Learn More
-        </Button>
+      <div className="pt-4 flex flex-row justify-between items center">
+        <div className="my-auto">
+          <Button
+            onClick={() => {
+              window.open(learnMoreUrl);
+            }}
+          >
+            Learn More
+          </Button>
+        </div>
         <TechLogoList logos={technologies} size={40} />
       </div>
     </div>
