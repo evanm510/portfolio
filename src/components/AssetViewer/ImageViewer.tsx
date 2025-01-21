@@ -32,6 +32,7 @@ const ImageViewerHeader = ({
       handleFullScreenClick={handleFullScreenClick}
       handleAssetDownload={handleAssetDownload}
       closeAssetViewer={closeAssetViewer}
+      assetName={asset.name}
     >
       <ZoomControl
         onZoomInClick={() => {
@@ -80,10 +81,10 @@ export default ({
               </div>
             )}
             <div className="p-4">
-              <Flex
-                justify="center"
-                align="center"
-                className={isFullScreen ? "h-[90vh]" : "h-[84vh]"}
+              <div
+                className={`flex justify-center align-center ${
+                  isFullScreen ? "h-[90vh]" : "h-[84vh]"
+                }`}
               >
                 <TransformComponent>
                   <img
@@ -96,7 +97,7 @@ export default ({
                     onLoad={() => setIsLoading(false)}
                   />
                 </TransformComponent>
-              </Flex>
+              </div>
             </div>
           </>
         )}
