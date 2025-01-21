@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ArrowBigLeft, ArrowBigRight, Circle, CircleDot } from "lucide-react";
+import { useAssetViewer } from "./AssetViewer/AssetViewer";
 
 type ImageSliderProps = {
   images: {
@@ -19,6 +20,8 @@ export function ImageSlider({ images }: ImageSliderProps) {
     setImageIndex((index) => (index === 0 ? images.length - 1 : index - 1));
   }
 
+  const { openAssetViewer } = useAssetViewer();
+
   return (
     <section aria-label="Image Slider" className="relative w-full h-full">
       <a
@@ -36,6 +39,13 @@ export function ImageSlider({ images }: ImageSliderProps) {
             aria-hidden={imageIndex !== index}
             className={`object-cover w-full h-full flex-shrink-0 flex-grow-0 transition-transform duration-300 ease-in-out`}
             style={{ transform: `translateX(-${100 * imageIndex}%)` }}
+            onClick={() => {
+              openAssetViewer({
+                name: alt,
+                type: "image",
+                hostPath: imageSrc,
+              });
+            }}
           />
         ))}
       </div>
