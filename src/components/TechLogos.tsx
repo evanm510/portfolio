@@ -11,13 +11,16 @@ export const TechLogo = ({ imageSrc, text, size }: TechLogoProps) => {
   return (
     <div>
       <Tooltip text={text}>
-        <Image
-          src={imageSrc}
-          alt={`${text} Icon`}
-          width={size}
-          height={size}
-          className="hover:scale-110 transition-transform duration-400"
-        />
+        <div style={{ width: `${size}px`, height: `${size}px` }}>
+          <Image
+            src={imageSrc}
+            alt={`${text} Icon`}
+            width={size}
+            height={size}
+            style={{ width: `${size}px`, height: `${size}px` }}
+            className="hover:scale-110 transition-transform duration-400"
+          />
+        </div>
       </Tooltip>
     </div>
   );
