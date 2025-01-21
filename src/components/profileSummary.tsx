@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import { Button } from "@/components/button";
 import { IconButton } from "@/components/iconButton";
+import { useAssetViewer } from "./AssetViewer/AssetViewer";
 
 export const ProfileSummary = () => {
   return (
@@ -22,9 +23,21 @@ export const ProfileSummary = () => {
 };
 
 const Buttons = () => {
+  const { openAssetViewer } = useAssetViewer();
+
   return (
     <div className="flex flex-row gap-10">
-      <Button onClick={() => {}}>My Resume</Button>
+      <Button
+        onClick={() => {
+          openAssetViewer({
+            name: "Resume",
+            type: "pdf",
+            hostPath: "http://localhost:3000/resume.pdf",
+          });
+        }}
+      >
+        My Resume
+      </Button>
       <div className="flex flex-row gap-4">
         <IconButton
           onClick={() => {
