@@ -1,4 +1,4 @@
-import ExperienceSection from "../ExperienceSection";
+import ExperienceSection from "../ExperienceSection_temp";
 
 const sendKitsExperienceData = {
   title: "SendKits",
