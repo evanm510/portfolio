@@ -1,17 +1,7 @@
-import { Spinner } from "flowbite-react";
-import { Box } from "@radix-ui/themes";
-
-type sizes = "xs" | "sm" | "md" | "lg" | "xl";
-export const Loading = ({
-  padding = false,
-  size = "md",
-}: {
-  padding?: boolean;
-  size?: sizes;
-}) => {
+export const Loading = ({}: {}) => {
   return (
-    <Box p={padding ? "4" : "0"}>
-      <Spinner size={size} className="sk-loading" color="purple" />
-    </Box>
+    <div>
+      <div className="w-8 h-8 border-4 border-gray-300 border-t-gray-900 rounded-full animate-spin"></div>
+    </div>
   );
 };

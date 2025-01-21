@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Button } from "@/components/button";
 import { IconButton } from "@/components/iconButton";
 import { useAssetViewer } from "./AssetViewer/AssetViewer";
+import { Loading } from "./loading";
 
 export const ProfileSummary = () => {
   return (
