@@ -76,13 +76,12 @@ const threadCloudExperienceData = {
   learnMoreUrl: "https://app.threadcloud.net/",
   technologies: [
     { imageSrc: "/tech-logos/react.svg", text: "React.js" },
-    { imageSrc: "/tech-logos/next.js.svg", text: "Next.js" },
+    { imageSrc: "/tech-logos/rubyonrails.svg", text: "Ruby on Rails" },
     { imageSrc: "/tech-logos/javascript.svg", text: "JavaScript" },
+    { imageSrc: "/tech-logos/ruby.svg", text: "Ruby" },
     { imageSrc: "/tech-logos/html.svg", text: "HTML" },
     { imageSrc: "/tech-logos/css.svg", text: "CSS" },
     { imageSrc: "/tech-logos/mysql.svg", text: "MySQL" },
-    { imageSrc: "/tech-logos/prisma.svg", text: "Prisma ORM" },
-    { imageSrc: "/tech-logos/awswhite.svg", text: "AWS" },
   ],
   images: [
     {
