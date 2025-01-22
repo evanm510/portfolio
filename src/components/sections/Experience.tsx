@@ -6,7 +6,7 @@ import {
 
 export default () => {
   return (
-    <section id="experience" className="scroll-mt-20">
+    <section id="experience" className="scroll-mt-20  mb-20">
       <div className="flex flex-col gap-4 items-center">
         <div className="text-3xl mx-auto">Experience</div>
         <ExperienceSection experienceData={sendKitsExperienceData} />
