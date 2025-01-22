@@ -3,7 +3,7 @@ import TechnicalSkills from "../TechnicalSkills";
 export default () => {
   return (
     <section id="about" className="scroll-mt-20 mb-20">
-      <div className="flex flex-col gap-6 items-center">
+      <div className="flex flex-col gap-4 items-center">
         <div className="text-3xl mx-auto">About Me</div>
         <div className="w-[90%] max-w-[1200px]">
           <div className="flex gap-4">
