@@ -7,9 +7,10 @@ type ImageSliderProps = {
     imageSrc: string;
     alt: string;
   }[];
+  aspectRatio?: string;
 };
 
-export function ImageSlider({ images }: ImageSliderProps) {
+export function ImageSlider({ images, aspectRatio }: ImageSliderProps) {
   const [imageIndex, setImageIndex] = useState(0);
 
   function showNextImage() {
@@ -22,22 +23,22 @@ export function ImageSlider({ images }: ImageSliderProps) {
 
   const { openAssetViewer } = useAssetViewer();
 
+  const sliderStyle = aspectRatio ? { aspectRatio } : {};
+
   return (
-    <section aria-label="Image Slider" className="relative w-full h-full">
-      <a
-        href="#after-image-slider-controls"
-        className="absolute w-px h-px -m-px overflow-hidden border-0 clip-[rect(0,0,0,0)] focus-visible:top-0 focus-visible:left-0 focus-visible:border focus-visible:bg-white focus-visible:p-2 focus-visible:w-auto focus-visible:h-auto focus-visible:m-0 focus-visible:clip-auto focus-visible:z-50"
-      >
-        Skip Image Slider Controls
-      </a>
-      <div className="flex overflow-hidden w-full h-full">
+    <section
+      aria-label="Image Slider"
+      className="relative w-full overflow-hidden bg-black"
+      style={sliderStyle}
+    >
+      <div className="flex w-full h-full">
         {images.map(({ imageSrc, alt }, index) => (
           <img
             key={imageSrc}
             src={imageSrc}
             alt={alt}
             aria-hidden={imageIndex !== index}
-            className={`object-cover w-full h-full flex-shrink-0 flex-grow-0 transition-transform duration-300 ease-in-out cursor-pointer`}
+            className="object-cover w-full h-full flex-shrink-0 transition-transform duration-300 ease-in-out cursor-pointer"
             style={{ transform: `translateX(-${100 * imageIndex}%)` }}
             onClick={() => {
               openAssetViewer({
@@ -88,7 +89,6 @@ export function ImageSlider({ images }: ImageSliderProps) {
           </button>
         ))}
       </div>
-      <div id="after-image-slider-controls" />
     </section>
   );
 }

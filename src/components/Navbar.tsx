@@ -23,7 +23,7 @@ export const NavBar = () => {
           <li>
             <Link href="#experience">
               <div className="hover:scale-110 transform transition-transform duration-300">
-                Professional Experience
+                Experience
               </div>
             </Link>
           </li>
@@ -35,9 +35,9 @@ export const NavBar = () => {
             </Link>
           </li>
           <li>
-            <Link href="#hobbies">
+            <Link href="#other-interests">
               <div className="hover:scale-110 transform transition-transform duration-300">
-                Hobbies and Interests
+                Other Interests
               </div>
             </Link>
           </li>
