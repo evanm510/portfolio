@@ -4,7 +4,6 @@ import React, { useEffect, useCallback, memo } from "react";
 import { Asset } from "@/types/global";
 import ImageViewer from "./ImageViewer";
 import PdfViewer from "./PdfViewer";
-import VideoViewer from "./VideoViewer";
 import "./asset-viewer.css";
 import useAssetViewerState from "./useAssetViewerState";
 
@@ -81,16 +80,6 @@ export default memo(() => {
       case "image":
         return (
           <ImageViewer
-            asset={asset}
-            isFullScreen={isFullScreen}
-            handleFullScreenClick={handleFullScreenClick}
-            handleAssetDownload={handleAssetDownload}
-            closeAssetViewer={closeAssetViewer}
-          />
-        );
-      case "video":
-        return (
-          <VideoViewer
             asset={asset}
             isFullScreen={isFullScreen}
             handleFullScreenClick={handleFullScreenClick}

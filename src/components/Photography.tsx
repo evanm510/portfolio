@@ -15,6 +15,14 @@ const images = [
     alt: "Portfolio image slider 3",
   },
   {
+    imageSrc: "photography_slider_images/portfolio_image_slider-4.jpg",
+    alt: "Portfolio image slider 4",
+  },
+  {
+    imageSrc: "photography_slider_images/portfolio_image_slider-5.jpg",
+    alt: "Portfolio image slider 5",
+  },
+  {
     imageSrc: "photography_slider_images/portfolio_image_slider-6.jpg",
     alt: "Portfolio image slider 6",
   },
@@ -32,7 +40,7 @@ const images = [
   },
   {
     imageSrc: "photography_slider_images/portfolio_image_slider-10.jpg",
-    alt: "Portfolio image slider 11",
+    alt: "Portfolio image slider 10",
   },
   {
     imageSrc: "photography_slider_images/portfolio_image_slider-11.jpg",
