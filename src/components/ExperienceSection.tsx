@@ -22,6 +22,7 @@ export default ({ experienceData }: ExperienceSectionProps) => {
       <div className="flex flex-row gap-6">
         <div>
           <div className="italic mb-2">{experienceData.description}</div>
+          <div className="font-bold italic">Notable Contributions:</div>
           <ul className="list-disc pl-5">
             {experienceData.contributions.map((item, index) => (
               <li key={index}>
