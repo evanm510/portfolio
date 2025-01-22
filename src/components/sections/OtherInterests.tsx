@@ -1,5 +1,6 @@
 import Photography from "../Photography";
 import Music from "../Music";
+import Geology from "../Geology";
 
 export default () => {
   return (
@@ -19,6 +20,9 @@ export default () => {
             {/* Music Section */}
             <div className="flex flex-1 flex-col items-center bg-secondary p-2 rounded-lg">
               <Music />
+            </div>
+            <div className="flex flex-1 flex-col items-center bg-secondary p-2 rounded-lg">
+              <Geology />
             </div>
           </div>
         </div>
