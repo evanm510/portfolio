@@ -10,7 +10,7 @@ type ExperienceSectionProps = {
 
 export default ({ experienceData }: ExperienceSectionProps) => {
   return (
-    <div className="w-[90%] w-[90%] max-w-[1200px] bg-secondary p-6 rounded-lg">
+    <div className="w-[90%] w-[90%] max-w-[1400px] bg-secondary p-6 rounded-lg">
       <div className="w-100 flex flex-row justify-between mb-4">
         <div className="flex items-center gap-2">
           <div className="text-2xl">{experienceData.title}</div>
