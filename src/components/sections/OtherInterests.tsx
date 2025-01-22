@@ -7,7 +7,10 @@ export default () => {
       id="other-interests"
       className="w-[90%] scroll-mt-20 flex items-center justify-center"
     >
-      <div className="flex flex-col justify-center items-center gap-6">
+      <div
+        className="flex flex-col justify-center items-center gap-4
+      "
+      >
         <div className="text-3xl">Other Interests</div>
         <div className="flex gap-4 w-full">
           {/* Photography Section */}

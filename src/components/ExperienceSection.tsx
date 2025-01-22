@@ -23,7 +23,7 @@ export default ({
   images,
 }: ExperienceSectionProps) => {
   return (
-    <div className="w-[90%] bg-secondary p-6 rounded-lg">
+    <div className="w-[90%] w-[90%] max-w-[1200px] bg-secondary p-6 rounded-lg">
       <div className="w-100 flex flex-row justify-between mb-4">
         <div className="text-2xl">{title}</div>
         <div className="italic">{dateRange}</div>
