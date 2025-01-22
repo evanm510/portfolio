@@ -37,7 +37,9 @@ export default ({
             ))}
           </ul>
         </div>
-        <ImageSlider images={images} />
+        <div className="max-w-[600px] max-h-[400px] overflow-hidden">
+          <ImageSlider images={images} />
+        </div>
       </div>
       <div className="pt-4 flex flex-row justify-between items center">
         <div className="my-auto">
