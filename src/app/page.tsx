@@ -13,7 +13,6 @@ export default function Home() {
       <ProfileSummary />
       <AboutMe />
       <ProfessionalExperience />
-      <Projects />
       <OtherInterests />
       <Contact />
     </div>
