@@ -28,13 +28,6 @@ export const NavBar = () => {
             </Link>
           </li>
           <li>
-            <Link href="#projects">
-              <div className="hover:scale-110 transform transition-transform duration-300">
-                Projects
-              </div>
-            </Link>
-          </li>
-          <li>
             <Link href="#other-interests">
               <div className="hover:scale-110 transform transition-transform duration-300">
                 Other Interests
