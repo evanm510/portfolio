@@ -8,7 +8,7 @@ export default () => {
       id="other-interests"
       className="scroll-mt-20 flex items-center justify-center"
     >
-      <div className="w-[90%] max-w-[1200px]">
+      <div className="w-[90%] max-w-[1400px]">
         <div className="flex flex-col justify-center items-center gap-4">
           <div className="text-3xl">Other Interests</div>
           <div className="flex flex-col gap-4 w-full">

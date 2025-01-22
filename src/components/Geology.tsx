@@ -68,7 +68,7 @@ export default () => {
               openAssetViewer({
                 name: "Dissertation - Chapter 3",
                 type: "pdf",
-                hostPath: "dissertation/chapter_2.pdf",
+                hostPath: "dissertation/chapter_3.pdf",
               });
             }}
           >
