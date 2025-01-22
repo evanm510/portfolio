@@ -97,7 +97,7 @@ export const threadCloudExperienceData: ExperienceData = {
         "Built and optimized UI components to add new features, improve user experience, and resolve bugs.",
     },
     {
-      name: "RESTful API Development",
+      name: "API Development",
       description:
         "Developed RESTful APIs to handle data processing and implement business logic.",
     },
