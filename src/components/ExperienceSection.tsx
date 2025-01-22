@@ -2,56 +2,50 @@ import Image from "next/image";
 import { Button } from "@/components/Button";
 import { TechLogoList } from "./TechLogos";
 import { ImageSlider } from "./ImageSlider";
+import { ExperienceData } from "@/types/global";
 
 type ExperienceSectionProps = {
-  title: string;
-  dateRange: string;
-  position: string;
-  description: string[];
-  learnMoreUrl: string;
-  technologies: { imageSrc: string; text: string }[];
-  images: { imageSrc: string; alt: string }[];
+  experienceData: ExperienceData;
 };
 
-export default ({
-  title,
-  dateRange,
-  position,
-  description,
-  learnMoreUrl,
-  technologies,
-  images,
-}: ExperienceSectionProps) => {
+export default ({ experienceData }: ExperienceSectionProps) => {
   return (
     <div className="w-[90%] w-[90%] max-w-[1200px] bg-secondary p-6 rounded-lg">
       <div className="w-100 flex flex-row justify-between mb-4">
-        <div className="text-2xl">{title}</div>
-        <div className="italic">{dateRange}</div>
+        <div className="flex items-center gap-2">
+          <div className="text-2xl">{experienceData.title}</div>
+          <div>-</div>
+          <div className="italic text-2xl">{experienceData.position}</div>
+        </div>
+        <div className="italic">{experienceData.dateRange}</div>
       </div>
       <div className="flex flex-row gap-6">
         <div>
-          <div className="italic mb-2">{position}</div>
+          <div className="italic mb-2">{experienceData.description}</div>
           <ul className="list-disc pl-5">
-            {description.map((item, index) => (
-              <li key={index}>{item}</li>
+            {experienceData.contributions.map((item, index) => (
+              <li key={index}>
+                <strong>{item.name}: </strong>
+                {item.description}
+              </li>
             ))}
           </ul>
         </div>
         <div className="max-w-[600px] max-h-[400px] overflow-hidden">
-          <ImageSlider images={images} />
+          <ImageSlider images={experienceData.images} />
         </div>
       </div>
       <div className="pt-4 flex flex-row justify-between items center">
         <div className="my-auto">
           <Button
             onClick={() => {
-              window.open(learnMoreUrl);
+              window.open(experienceData.learnMoreUrl);
             }}
           >
             Learn More
           </Button>
         </div>
-        <TechLogoList logos={technologies} size={40} />
+        <TechLogoList logos={experienceData.technologies} size={40} />
       </div>
     </div>
   );

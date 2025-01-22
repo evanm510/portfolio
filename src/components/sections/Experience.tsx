@@ -1,16 +1,38 @@
 import ExperienceSection from "../ExperienceSection";
+import { ExperienceData } from "@/types/global";
 
-const sendKitsExperienceData = {
+const sendKitsExperienceData: ExperienceData = {
   title: "SendKits",
   dateRange: "Feb 2024 - Present",
-  position:
-    "Full-stack developer for digital sales room software using React.js, Next.js and MySQL.",
-  description: [
-    "Built a custom embedded content viewer for displaying documents and media within the app.",
-    "Implemented a file proxying system to improve security when serving assets from AWS S3.",
-    "Engineered an AWS Lambda function to generate and store thumbnail images.",
-    "Developed and integrated an image cropping feature to improve user control over image editing.",
-    "Implemented various other APIs, UI components, database scripts, and third-party integrations.",
+  position: "Software Engineer I",
+  description:
+    "SendKits streamlines sales by enabling rapid creation of web-based sales rooms featuring branded materials, documents, and media, with analytics to track engagement and drive better results.",
+  contributions: [
+    {
+      name: "Embedded Content Viewer",
+      description:
+        "Built a custom viewer for displaying documents and media, enhancing client engagement and usability.",
+    },
+    {
+      name: "File Proxying System",
+      description:
+        "Implemented a secure proxy system for serving assets from AWS S3, improving security and reliability.",
+    },
+    {
+      name: "AWS Lambda Integration",
+      description:
+        "Engineered a function to generate and store thumbnail images dynamically.",
+    },
+    {
+      name: "Image Cropping Feature",
+      description:
+        "Developed and integrated an intuitive tool for users to edit images, improving control and customization.",
+    },
+    {
+      name: "API and UI Development",
+      description:
+        "Designed and deployed APIs, database scripts, and reusable UI components, ensuring seamless third-party integrations and robust performance.",
+    },
   ],
   learnMoreUrl: "https://www.sendkits.io/",
   technologies: [
@@ -63,15 +85,28 @@ const sendKitsExperienceData = {
   ],
 };
 
-const threadCloudExperienceData = {
+const threadCloudExperienceData: ExperienceData = {
   title: "ThreadCloud",
   dateRange: "Aug 2023 - Feb 2024",
-  position:
-    "Full-stack developer for project management software using React.js and Ruby on Rails.",
-  description: [
-    "Built and optimized UI components to add new features, improve user experience, and resolve bugs.",
-    "Developed RESTful APIs to handle data processing and implement business logic",
-    "Assisted in database schema design and implemented changes to meet application requirements.",
+  position: "Software Engineering Intern",
+  description:
+    "ThreadCloud is a project management software designed to streamline collaboration and provide clients with real-time visibility into the progress of their projects. With features like task tracking, milestone management, and status updates, Threadcloud enables teams to stay organized and ensures clients remain informed throughout the project lifecycle.",
+  contributions: [
+    {
+      name: "UI Components Optimization",
+      description:
+        "Built and optimized UI components to add new features, improve user experience, and resolve bugs.",
+    },
+    {
+      name: "RESTful API Development",
+      description:
+        "Developed RESTful APIs to handle data processing and implement business logic.",
+    },
+    {
+      name: "Database Schema Design",
+      description:
+        "Assisted in database schema design and implemented changes to meet application requirements.",
+    },
   ],
   learnMoreUrl: "https://app.threadcloud.net/",
   technologies: [
@@ -112,24 +147,8 @@ export default () => {
     <section id="experience" className="scroll-mt-20">
       <div className="flex flex-col gap-4 items-center">
         <div className="text-3xl mx-auto">Experience</div>
-        <ExperienceSection
-          title={sendKitsExperienceData.title}
-          dateRange={sendKitsExperienceData.dateRange}
-          position={sendKitsExperienceData.position}
-          description={sendKitsExperienceData.description}
-          images={sendKitsExperienceData.images}
-          learnMoreUrl={sendKitsExperienceData.learnMoreUrl}
-          technologies={sendKitsExperienceData.technologies}
-        />
-        <ExperienceSection
-          title={threadCloudExperienceData.title}
-          dateRange={threadCloudExperienceData.dateRange}
-          position={threadCloudExperienceData.position}
-          description={threadCloudExperienceData.description}
-          images={threadCloudExperienceData.images}
-          learnMoreUrl={threadCloudExperienceData.learnMoreUrl}
-          technologies={threadCloudExperienceData.technologies}
-        />
+        <ExperienceSection experienceData={sendKitsExperienceData} />
+        <ExperienceSection experienceData={threadCloudExperienceData} />
       </div>
     </section>
   );
