@@ -106,12 +106,7 @@ export default ({
       }`}
     >
       <div className="mr-4">
-        <Heading
-          size="4"
-          className={`truncate ${headingMaxWidthClass} md:max-w-full`}
-        >
-          {assetName}
-        </Heading>
+        <div style={{ color: "#282828" }}>{assetName}</div>
       </div>
       <div className="flex flex-row gap-4">
         {children}
