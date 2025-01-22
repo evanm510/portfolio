@@ -29,7 +29,7 @@ export default () => {
   return (
     <div className="flex items-center justify-center text-white">
       <div className="max-w-md w-full space-y-4">
-        <h1 className="text-lg font-semibold text-center">
+        <h1 className="text-lg text-center">
           Have a question or want to work together? Leave your details and I'll
           get back to you as soon as possible.
         </h1>
@@ -64,7 +64,7 @@ export default () => {
               className="w-full p-3 bg-gray-800 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             ></textarea>
           </div>
-          <div>
+          <div className="flex justify-center">
             <Button onClick={handleSubmit}>Submit</Button>
           </div>
         </form>
