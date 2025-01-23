@@ -5,7 +5,7 @@ import { useAssetViewer } from "./AssetViewer/AssetViewer";
 export default () => {
   const { openAssetViewer } = useAssetViewer();
   return (
-    <div className="w-[90%] bg-secondary shadow p-6 rounded-lg">
+    <div className="p-6">
       <div className="flex justify-center mb-4">
         <div className="text-2xl">Geology</div>
       </div>
