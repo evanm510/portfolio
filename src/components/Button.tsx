@@ -9,7 +9,7 @@ export const Button = ({
 }) => {
   return (
     <div
-      className="text-button inline-block bg-buttonBackground px-4 py-2 text-gray rounded-lg cursor-pointer hover:scale-105 transform transition-transform duration-300"
+      className="text-button inline-block bg-accent px-4 py-2 text-gray rounded-lg cursor-pointer hover:scale-105 transform transition-transform duration-300"
       onClick={() => onClick()}
     >
       {children}
