@@ -5,7 +5,7 @@ import { useAssetViewer } from "./AssetViewer/AssetViewer";
 export default () => {
   const { openAssetViewer } = useAssetViewer();
   return (
-    <div className="p-6">
+    <div className="w-[90%] bg-secondary p-6 rounded-lg">
       <div className="flex justify-center mb-4">
         <div className="text-2xl">Geology</div>
       </div>
@@ -15,16 +15,25 @@ export default () => {
             Before transitioning to software engineering, I earned a PhD in
             Geology from UC Santa Barbara. My research focused on the magmatic
             and structural evolution of the Deep Creek Range and Kern Mountains
-            in eastern Nevada. This work included over six months of fieldwork,
+            in eastern Nevada, and included over six months of fieldwork,
             combined with extensive petrographic analysis, geochemical modeling,
-            and U-Pb geochronology. The findings led to a significant
-            reinterpretation of the region’s Late Cretaceous geologic history
-            and uncovered one of the largest magmatically induced folds ever
-            identified.
+            and U-Pb geochronology.
+          </div>
+          <div>
+            My experiences in graduate school prepared me to tackle complex
+            problems and manage multiple responsibilities with independence and
+            efficiency. Conducting research required meticulous planning, time
+            management, and the ability to adapt to unexpected challenges in the
+            field and laboratory. In addition to my research, I served as a
+            teaching assistant for over 25 courses, including five intensive,
+            six-week summer field classes where students and instructors camped
+            together. These experiences sharpened my ability to collaborate,
+            communicate, and lead in dynamic environments, skills that have been
+            invaluable in my transition to software engineering.
           </div>
         </div>
         <div className="flex-2">
-          <Image src="/geology_image.jpg" alt="" width={600} height={400} />
+          <Image src="/geology_image.jpg" alt="" width={700} height={400} />
         </div>
       </div>
       <div className="flex flex-col items-center justify-center mt-6 gap-2">
