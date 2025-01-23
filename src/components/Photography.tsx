@@ -4,74 +4,14 @@ import React, { useState } from "react";
 import { ImageGallery } from "react-image-grid-gallery";
 import { Button } from "./Button";
 import { ImageSlider } from "./ImageSlider";
+import { sliderAlbumImages, fullAlbumImages } from "@/data/images";
+import { IconButton } from "@radix-ui/themes";
+import { Cross1Icon } from "@radix-ui/react-icons";
 
-const images = [
-  {
-    imageSrc: "photography_slider_images/portfolio_image_slider-1.jpg",
-    alt: "Portfolio image slider 1",
-  },
-  {
-    imageSrc: "photography_slider_images/portfolio_image_slider-2.jpg",
-    alt: "Portfolio image slider 2",
-  },
-  {
-    imageSrc: "photography_slider_images/portfolio_image_slider-3.jpg",
-    alt: "Portfolio image slider 3",
-  },
-  {
-    imageSrc: "photography_slider_images/portfolio_image_slider-4.jpg",
-    alt: "Portfolio image slider 4",
-  },
-  {
-    imageSrc: "photography_slider_images/portfolio_image_slider-5.jpg",
-    alt: "Portfolio image slider 5",
-  },
-  {
-    imageSrc: "photography_slider_images/portfolio_image_slider-6.jpg",
-    alt: "Portfolio image slider 6",
-  },
-  {
-    imageSrc: "photography_slider_images/portfolio_image_slider-7.jpg",
-    alt: "Portfolio image slider 7",
-  },
-  {
-    imageSrc: "photography_slider_images/portfolio_image_slider-8.jpg",
-    alt: "Portfolio image slider 8",
-  },
-  {
-    imageSrc: "photography_slider_images/portfolio_image_slider-9.jpg",
-    alt: "Portfolio image slider 9",
-  },
-  {
-    imageSrc: "photography_slider_images/portfolio_image_slider-10.jpg",
-    alt: "Portfolio image slider 10",
-  },
-  {
-    imageSrc: "photography_slider_images/portfolio_image_slider-11.jpg",
-    alt: "Portfolio image slider 11",
-  },
-  {
-    imageSrc: "photography_slider_images/portfolio_image_slider-12.jpg",
-    alt: "Portfolio image slider 12",
-  },
-  {
-    imageSrc: "photography_slider_images/portfolio_image_slider-13.jpg",
-    alt: "Portfolio image slider 13",
-  },
-  {
-    imageSrc: "photography_slider_images/portfolio_image_slider-14.jpg",
-    alt: "Portfolio image slider 14",
-  },
-  {
-    imageSrc: "photography_slider_images/portfolio_image_slider-15.jpg",
-    alt: "Portfolio image slider 15",
-  },
-];
-
-const imagesArray = images.map((img, index) => ({
+const fullAlbumImagesArray = fullAlbumImages.map((img, index) => ({
   id: `image${index + 1}`,
   alt: img.alt,
-  caption: img.alt,
+  caption: "",
   src: img.imageSrc,
 }));
 
@@ -88,12 +28,12 @@ export default function Photography() {
   };
 
   return (
-    <div className="w-[90%] bg-secondary p-6 rounded-lg">
+    <div className="px-20 py-6">
       <div className="flex justify-center mb-4">
         <div className="text-2xl">Photography</div>
       </div>
 
-      <ImageSlider images={images} aspectRatio="16/9" />
+      <ImageSlider images={sliderAlbumImages} aspectRatio="16/9" />
 
       <div className="flex justify-center mt-4">
         <Button onClick={openModal}>View Full Gallery</Button>
@@ -104,19 +44,20 @@ export default function Photography() {
           onClick={handleOverlayClick}
           className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50"
         >
-          <div className="bg-white rounded-lg w-11/12 h-5/6 p-4 overflow-y-auto relative">
-            <button
-              onClick={closeModal}
-              className="absolute top-4 right-4 bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-red-600"
-            >
-              &times;
-            </button>
-            <ImageGallery
-              imagesInfoArray={imagesArray}
-              columnCount={"auto"}
-              columnWidth={500}
-              gapSize={24}
-            />
+          <div className="bg-white rounded-lg w-11/12 h-5/6 overflow-y-auto relative">
+            <div className="sticky top-0 left-0 right-0 bg-white shadow flex justify-end px-4 py-2 z-10">
+              <IconButton variant="ghost" onClick={closeModal} size="3">
+                <Cross1Icon color="#1e1e1e" className="w-5 h-5" />
+              </IconButton>
+            </div>
+            <div className="p-4">
+              <ImageGallery
+                imagesInfoArray={fullAlbumImagesArray}
+                columnCount={"auto"}
+                columnWidth={500}
+                gapSize={24}
+              />
+            </div>
           </div>
         </div>
       )}
