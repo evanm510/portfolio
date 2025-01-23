@@ -89,14 +89,14 @@ type AssetViewHeaderProps = {
   closeAssetViewer: () => void;
 };
 
-export default ({
+export default function AssetViewerHeader({
   children,
   isFullScreen,
   assetName,
   handleFullScreenClick,
   handleAssetDownload,
   closeAssetViewer,
-}: AssetViewHeaderProps) => {
+}: AssetViewHeaderProps) {
   const headingMaxWidthClass = children ? "max-w-[140px]" : "max-w-[200px]";
 
   return (
@@ -119,4 +119,4 @@ export default ({
       </div>
     </div>
   );
-};
+}

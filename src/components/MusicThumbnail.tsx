@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useAssetViewer } from "./AssetViewer/AssetViewer";
 
-export default ({
+export default function MusicThumbnail({
   title,
   imgSrc,
   videoSrc,
@@ -9,7 +9,7 @@ export default ({
   title: string;
   imgSrc: string;
   videoSrc: string;
-}) => {
+}) {
   const { openAssetViewer } = useAssetViewer();
 
   return (
@@ -25,4 +25,4 @@ export default ({
       <Image src={imgSrc} alt={title} width={300} height={200} />
     </div>
   );
-};
+}

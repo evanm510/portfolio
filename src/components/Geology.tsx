@@ -1,7 +1,7 @@
 import { Button } from "./Button";
 import { useAssetViewer } from "./AssetViewer/AssetViewer";
 
-export default () => {
+export default function Geology() {
   const { openAssetViewer } = useAssetViewer();
   return (
     <div className="w-[90%] bg-card p-6 rounded-lg">
@@ -92,4 +92,4 @@ export default () => {
       </div>
     </div>
   );
-};
+}

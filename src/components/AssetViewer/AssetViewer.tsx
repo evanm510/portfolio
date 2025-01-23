@@ -11,11 +11,14 @@ export function useAssetViewer() {
   const { asset, setIsOpen, setIsFullScreen, setAsset, setFileType } =
     useAssetViewerState((state) => state);
 
-  const openAssetViewer = useCallback((asset: Asset) => {
-    setAsset(asset);
-    setFileType(asset.type);
-    setIsOpen(true);
-  }, []);
+  const openAssetViewer = useCallback(
+    (asset: Asset) => {
+      setAsset(asset);
+      setFileType(asset.type);
+      setIsOpen(true);
+    },
+    [setAsset, setFileType, setIsOpen]
+  );
 
   const closeAssetViewer = useCallback(() => {
     setAsset(null);

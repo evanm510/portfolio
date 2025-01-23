@@ -60,13 +60,13 @@ type PdfViewerProps = {
   closeAssetViewer: () => void;
 };
 
-export default ({
+export default function PdfViewer({
   asset,
   isFullScreen,
   handleAssetDownload,
   handleFullScreenClick,
   closeAssetViewer,
-}: PdfViewerProps) => {
+}: PdfViewerProps) {
   const [numPages, setNumPages] = useState<number>();
   const [pageWidth, setPageWidth] = useState<number>(
     Math.min(window.innerWidth * 0.6, 1000)
@@ -125,4 +125,4 @@ export default ({
       </Document>
     </div>
   );
-};
+}

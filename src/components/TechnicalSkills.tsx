@@ -32,7 +32,7 @@ const tools = [
   { imageSrc: "/tech-logos/beekeeper.svg", text: "BeeKeeper Studio" },
 ];
 
-export default () => {
+export default function TechnicalSkills() {
   return (
     <div className="bg-card shadow py-4 px-6 rounded-lg">
       <div className="flex items-center">
@@ -56,4 +56,4 @@ export default () => {
       </div>
     </div>
   );
-};
+}

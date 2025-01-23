@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { JSX, useState } from "react";
 import { Button } from "./Button";
 
-export default () => {
+export default function ContactForm() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -71,4 +71,4 @@ export default () => {
       </div>
     </div>
   );
-};
+}

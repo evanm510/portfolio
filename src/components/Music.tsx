@@ -9,7 +9,7 @@ const videoData = [
   "https://www.youtube.com/embed/S7vwWql45Jc",
 ];
 
-export default () => {
+export default function Music() {
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
 
   const handleNext = () => {
@@ -43,4 +43,4 @@ export default () => {
       </div>
     </div>
   );
-};
+}

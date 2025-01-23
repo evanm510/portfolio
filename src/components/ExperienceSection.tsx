@@ -8,7 +8,9 @@ type ExperienceSectionProps = {
   experienceData: ExperienceData;
 };
 
-export default ({ experienceData }: ExperienceSectionProps) => {
+export default function ExperienceSection({
+  experienceData,
+}: ExperienceSectionProps) {
   return (
     <div className="w-[90%] w-[90%] max-w-[1400px] bg-card shadow p-6 rounded-lg">
       <div className="text-heading  w-100 flex flex-row justify-between mb-4">
@@ -52,4 +54,4 @@ export default ({ experienceData }: ExperienceSectionProps) => {
       </div>
     </div>
   );
-};
+}

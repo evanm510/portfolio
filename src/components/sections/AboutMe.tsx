@@ -1,7 +1,7 @@
 import TechnicalSkills from "../TechnicalSkills";
 import { useAssetViewer } from "../AssetViewer/AssetViewer";
 
-export default () => {
+export default function AboutMe() {
   return (
     <section id="about" className="scroll-mt-20 mb-20">
       <div className="flex flex-col gap-4 items-center">
@@ -18,7 +18,7 @@ export default () => {
       </div>
     </section>
   );
-};
+}
 
 const BioSummary = () => {
   return (

@@ -4,7 +4,7 @@ import {
   threadCloudExperienceData,
 } from "@/data/experienceData";
 
-export default () => {
+export default function Experience() {
   return (
     <section id="experience" className="scroll-mt-20  mb-20">
       <div className="flex flex-col gap-4 items-center">
@@ -16,4 +16,4 @@ export default () => {
       </div>
     </section>
   );
-};
+}

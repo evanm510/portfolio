@@ -54,13 +54,13 @@ type ImageViewerProps = {
   closeAssetViewer: () => void;
 };
 
-export default ({
+export default function ImageViewer({
   asset,
   isFullScreen,
   handleFullScreenClick,
   handleAssetDownload,
   closeAssetViewer,
-}: ImageViewerProps) => {
+}: ImageViewerProps) {
   const [isLoading, setIsLoading] = useState(true);
 
   return (
@@ -104,4 +104,4 @@ export default ({
       </TransformWrapper>
     </div>
   );
-};
+}

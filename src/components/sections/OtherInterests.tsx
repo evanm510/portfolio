@@ -2,7 +2,7 @@ import Photography from "../Photography";
 import Music from "../Music";
 import Geology from "../Geology";
 
-export default () => {
+export default function OtherInterests() {
   return (
     <section
       id="other-interests"
@@ -28,4 +28,4 @@ export default () => {
       </div>
     </section>
   );
-};
+}
