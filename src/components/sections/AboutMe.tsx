@@ -1,4 +1,5 @@
 import TechnicalSkills from "../TechnicalSkills";
+import { useAssetViewer } from "../AssetViewer/AssetViewer";
 
 export default () => {
   return (
@@ -40,19 +41,42 @@ const BioSummary = () => {
 };
 
 const Education = () => {
+  const { openAssetViewer } = useAssetViewer();
+
+  const educationContainerClass =
+    "shadow-lg cursor-pointer mb-6 bg-mediumGray py-2 px-4 rounded-md hover:scale-105 transition transition-translation duration-400";
+
   return (
     <div className="bg-secondary py-4 px-6 rounded-lg flex-1">
       <div className="flex items-center mb-2">
         <div className="mx-auto text-xl">Education</div>
       </div>
-      <div className="mb-6">
+      <div
+        className={educationContainerClass}
+        onClick={() => {
+          openAssetViewer({
+            name: "Oregon State Degree",
+            type: "image",
+            hostPath: "/oregon_state_degree.jpg",
+          });
+        }}
+      >
         <div className="flex justify-between">
           <div className="font-bold">B.S., Computer Science</div>
           <div className="italic">Dec 2024</div>
         </div>
         <div>Oregon State University</div>
       </div>
-      <div>
+      <div
+        className={educationContainerClass}
+        onClick={() => {
+          openAssetViewer({
+            name: "UC Santa Barbara Degree",
+            type: "image",
+            hostPath: "/oregon_state_degree.jpg",
+          });
+        }}
+      >
         <div className="flex justify-between">
           <div className="font-bold">Ph.D. Earth Science</div>
           <div className="italic">June 2023</div>
