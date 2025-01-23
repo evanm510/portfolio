@@ -5,7 +5,7 @@ export default () => {
   return (
     <section id="about" className="scroll-mt-20 mb-20">
       <div className="flex flex-col gap-4 items-center">
-        <div className="text-3xl mx-auto">About Me</div>
+        <div className="font-heading text-3xl mx-auto">About Me</div>
         <div className="w-[90%] max-w-[1400px]">
           <div className="flex gap-4">
             <div className="flex flex-col gap-4">
