@@ -5,7 +5,7 @@ export default () => {
   return (
     <section id="about" className="scroll-mt-20 mb-20">
       <div className="flex flex-col gap-4 items-center">
-        <div className="text-3xl mx-auto">About Me</div>
+        <div className="text-heading text-3xl mx-auto">About Me</div>
         <div className="w-[90%] max-w-[1400px]">
           <div className="flex gap-4">
             <div className="flex flex-col gap-4">
@@ -22,9 +22,9 @@ export default () => {
 
 const BioSummary = () => {
   return (
-    <div className="bg-secondary shadow py-4 px-6 rounded-lg flex-1">
+    <div className="bg-card shadow py-4 px-6 rounded-lg flex-1">
       <div className="flex items-center mb-2">
-        <div className="mx-auto text-xl">Summary</div>
+        <div className="text-heading mx-auto text-xl">Summary</div>
       </div>
       <div className="mb-4">
         I'm a software engineer with a strong analytical mindset and a passion
@@ -52,9 +52,11 @@ const Education = () => {
     "shadow-lg cursor-pointer mb-6 bg-mediumGray py-2 px-4 rounded-md hover:scale-105 transition transition-translation duration-400";
 
   return (
-    <div className="bg-secondary shadow py-4 px-6 rounded-lg flex-1">
+    <div className="bg-card shadow py-4 px-6 rounded-lg flex-1">
       <div className="flex items-center mb-2">
-        <div className="mx-auto text-xl">Education</div>
+        <div className="font-heading text-heading mx-auto text-xl">
+          Education
+        </div>
       </div>
       <div
         className={educationContainerClass}

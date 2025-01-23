@@ -10,8 +10,8 @@ type ExperienceSectionProps = {
 
 export default ({ experienceData }: ExperienceSectionProps) => {
   return (
-    <div className="w-[90%] w-[90%] max-w-[1400px] bg-secondary shadow p-6 rounded-lg">
-      <div className="w-100 flex flex-row justify-between mb-4">
+    <div className="w-[90%] w-[90%] max-w-[1400px] bg-card shadow p-6 rounded-lg">
+      <div className="text-heading  w-100 flex flex-row justify-between mb-4">
         <div className="flex items-center gap-2">
           <div className="text-2xl">{experienceData.title}</div>
           <div>-</div>
@@ -22,11 +22,13 @@ export default ({ experienceData }: ExperienceSectionProps) => {
       <div className="flex flex-row gap-6">
         <div>
           <div className="italic mb-2">{experienceData.description}</div>
-          <div className="font-bold italic">Notable Contributions:</div>
+          <div className="text-heading font-bold italic">
+            Notable Contributions:
+          </div>
           <ul className="list-disc pl-5">
             {experienceData.contributions.map((item, index) => (
               <li key={index}>
-                <strong>{item.name}: </strong>
+                <strong className="text-heading">{item.name}: </strong>
                 {item.description}
               </li>
             ))}

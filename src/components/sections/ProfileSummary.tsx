@@ -9,7 +9,7 @@ export const ProfileSummary = () => {
   return (
     <section id="home" className="h-screen flex flex-row gap-12 items-center">
       <div className="flex flex-col gap-4">
-        <div className="text-5xl">Evan Monroe</div>
+        <div className="text-heading text-5xl">Evan Monroe</div>
         <div className="w-80">
           PhD geologist turned software engineer with a passion for full-stack
           web development and an analytical approach to problem-solving.
