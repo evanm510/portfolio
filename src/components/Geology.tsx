@@ -4,7 +4,7 @@ import { useAssetViewer } from "./AssetViewer/AssetViewer";
 export default () => {
   const { openAssetViewer } = useAssetViewer();
   return (
-    <div className="w-[90%] bg-secondary p-6 rounded-lg">
+    <div className="w-[90%] bg-card p-6 rounded-lg">
       <div className="flex justify-center mb-4">
         <div className="text-2xl">Geology</div>
       </div>
@@ -42,7 +42,7 @@ export default () => {
         </div>
       </div>
       <div className="flex flex-col items-center justify-center mt-6 gap-2">
-        <div className="font-bold">Check out my Dissertation:</div>
+        <div className="text-heading font-bold">Check out my Dissertation:</div>
         <div className="flex flex-row gap-6">
           <Button
             onClick={() => {
