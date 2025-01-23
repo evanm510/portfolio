@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Button } from "./Button";
 import { useAssetViewer } from "./AssetViewer/AssetViewer";
 
@@ -20,18 +19,26 @@ export default () => {
             and U-Pb geochronology.
           </div>
           <div>
-            My findings led to a significant reinterpretation of the region’s
-            Late Cretaceous geologic history and highlighted the role of
-            magmatism in driving deformation and metamorphism in the mid- to
-            lower crust. These discoveries provided new insights into how
-            magmatism drives large-scale folding, crustal anatexis, and
-            dynamothermal metamorphism, significantly advancing our
-            understanding of Late Cretaceous geologic processes in the Sevier
-            hinterland.
+            My experiences in graduate school prepared me to tackle complex
+            problems and manage multiple responsibilities with independence and
+            efficiency. Conducting research required meticulous planning, time
+            management, and the ability to adapt to unexpected challenges in the
+            field and laboratory. In addition to my research, I served as a
+            teaching assistant for over 25 courses, including five intensive,
+            six-week summer field classes where students and instructors camped
+            together. These experiences sharpened my ability to collaborate,
+            communicate, and lead in dynamic environments, skills that have been
+            invaluable in my transition to software engineering.
           </div>
         </div>
         <div className="flex-2">
-          <Image src="/geology_image.jpg" alt="" width={700} height={400} />
+          <div className="w-[500px] h-[400px] overflow-hidden rounded-lg">
+            <img
+              src="/geology_image.jpg"
+              alt="Geology"
+              className="w-full h-full object-cover object-center"
+            />
+          </div>
         </div>
       </div>
       <div className="flex flex-col items-center justify-center mt-6 gap-2">
