@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Button } from "./Button";
 import { useAssetViewer } from "./AssetViewer/AssetViewer";
 
@@ -33,7 +32,13 @@ export default () => {
           </div>
         </div>
         <div className="flex-2">
-          <Image src="/geology_image.jpg" alt="" width={700} height={400} />
+          <div className="w-[500px] h-[400px] overflow-hidden rounded-lg">
+            <img
+              src="/geology_image.jpg"
+              alt="Geology"
+              className="w-full h-full object-cover object-center"
+            />
+          </div>
         </div>
       </div>
       <div className="flex flex-col items-center justify-center mt-6 gap-2">
