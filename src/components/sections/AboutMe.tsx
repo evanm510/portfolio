@@ -20,21 +20,26 @@ export default () => {
   );
 };
 
-const bioText = [
-  "I'm a geologist turned software engineer with a passion for creating intuitive and efficient software solutions. After earning a PhD in Earth Science from UCSB, I transitioned to software development to pursue my interest in technology and problem-solving. This journey has shaped my analytical mindset and given me a unique perspective on tackling challenges in creative and effective ways.",
-  "In my software engineering roles, I've gained hands-on experience with full-stack development using tools like React.js, Next.js, and Ruby on Rails. I've built custom UI components, developed APIs, and optimized backend services, focusing on delivering secure, user-friendly applications. My work includes implementing features like embedded content viewers, file proxying systems, and image cropping tools, all designed to enhance functionality and user experience.",
-];
-
 const BioSummary = () => {
   return (
     <div className="bg-secondary shadow py-4 px-6 rounded-lg flex-1">
       <div className="flex items-center mb-2">
         <div className="mx-auto text-xl">Summary</div>
       </div>
-      <div className="flex flex-col items-center gap-4 ">
-        {bioText.map((paragraph, index) => (
-          <p key={index}>{paragraph}</p>
-        ))}
+      <div className="mb-4">
+        I'm a software engineer with a strong analytical mindset and a passion
+        for creating intuitive and efficient solutions. My experience spans
+        full-stack development using modern tools like React.js, Next.js, and
+        Ruby on Rails. I've built custom UI components, developed APIs, and
+        optimized backend services, focusing on delivering secure, user-friendly
+        applications.
+      </div>
+      <div>
+        With a diverse background that includes earning a PhD in Earth Science
+        from UCSB, I bring a unique perspective to problem-solving. My ability
+        to analyze complex systems and think critically has been instrumental in
+        delivering innovative software solutions. I thrive on tackling complex
+        challenges and turning them into elegant, impactful solutions.
       </div>
     </div>
   );
