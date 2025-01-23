@@ -26,7 +26,7 @@ export default function Photography() {
   };
 
   return (
-    <div className="w-[90%] bg-secondary p-6 rounded-lg">
+    <div className="w-[90%] bg-secondary shadow p-6 rounded-lg">
       <div className="flex justify-center mb-4">
         <div className="text-2xl">Photography</div>
       </div>

@@ -27,7 +27,7 @@ const bioText = [
 
 const BioSummary = () => {
   return (
-    <div className="bg-secondary py-4 px-6 rounded-lg flex-1">
+    <div className="bg-secondary shadow py-4 px-6 rounded-lg flex-1">
       <div className="flex items-center mb-2">
         <div className="mx-auto text-xl">Summary</div>
       </div>
@@ -47,7 +47,7 @@ const Education = () => {
     "shadow-lg cursor-pointer mb-6 bg-mediumGray py-2 px-4 rounded-md hover:scale-105 transition transition-translation duration-400";
 
   return (
-    <div className="bg-secondary py-4 px-6 rounded-lg flex-1">
+    <div className="bg-secondary shadow py-4 px-6 rounded-lg flex-1">
       <div className="flex items-center mb-2">
         <div className="mx-auto text-xl">Education</div>
       </div>

@@ -34,7 +34,7 @@ const tools = [
 
 export default () => {
   return (
-    <div className="bg-secondary py-4 px-6 rounded-lg">
+    <div className="bg-secondary shadow py-4 px-6 rounded-lg">
       <div className="flex items-center">
         <div className="mx-auto text-xl">Technical Skills</div>
       </div>
