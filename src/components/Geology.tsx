@@ -5,7 +5,7 @@ import { useAssetViewer } from "./AssetViewer/AssetViewer";
 export default () => {
   const { openAssetViewer } = useAssetViewer();
   return (
-    <div className="p-6">
+    <div className="w-[90%] bg-secondary p-6 rounded-lg">
       <div className="flex justify-center mb-4">
         <div className="text-2xl">Geology</div>
       </div>
@@ -15,16 +15,23 @@ export default () => {
             Before transitioning to software engineering, I earned a PhD in
             Geology from UC Santa Barbara. My research focused on the magmatic
             and structural evolution of the Deep Creek Range and Kern Mountains
-            in eastern Nevada. This work included over six months of fieldwork,
+            in eastern Nevada, and included over six months of fieldwork,
             combined with extensive petrographic analysis, geochemical modeling,
-            and U-Pb geochronology. The findings led to a significant
-            reinterpretation of the region’s Late Cretaceous geologic history
-            and uncovered one of the largest magmatically induced folds ever
-            identified.
+            and U-Pb geochronology.
+          </div>
+          <div>
+            My findings led to a significant reinterpretation of the region’s
+            Late Cretaceous geologic history and highlighted the role of
+            magmatism in driving deformation and metamorphism in the mid- to
+            lower crust. These discoveries provided new insights into how
+            magmatism drives large-scale folding, crustal anatexis, and
+            dynamothermal metamorphism, significantly advancing our
+            understanding of Late Cretaceous geologic processes in the Sevier
+            hinterland.
           </div>
         </div>
         <div className="flex-2">
-          <Image src="/geology_image.jpg" alt="" width={600} height={400} />
+          <Image src="/geology_image.jpg" alt="" width={700} height={400} />
         </div>
       </div>
       <div className="flex flex-col items-center justify-center mt-6 gap-2">
