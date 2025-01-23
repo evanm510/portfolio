@@ -5,6 +5,8 @@ import { ImageGallery } from "react-image-grid-gallery";
 import { Button } from "./Button";
 import { ImageSlider } from "./ImageSlider";
 import { sliderAlbumImages, fullAlbumImages } from "@/data/images";
+import { IconButton } from "@radix-ui/themes";
+import { Cross1Icon } from "@radix-ui/react-icons";
 
 const fullAlbumImagesArray = fullAlbumImages.map((img, index) => ({
   id: `image${index + 1}`,
@@ -42,19 +44,22 @@ export default function Photography() {
           onClick={handleOverlayClick}
           className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50"
         >
-          <div className="bg-white rounded-lg w-11/12 h-5/6 p-4 overflow-y-auto relative">
-            <button
-              onClick={closeModal}
-              className="absolute top-4 right-4 bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-red-600"
-            >
-              &times;
-            </button>
-            <ImageGallery
-              imagesInfoArray={fullAlbumImagesArray}
-              columnCount={"auto"}
-              columnWidth={500}
-              gapSize={24}
-            />
+          <div className="bg-white rounded-lg w-11/12 h-5/6 overflow-y-auto relative">
+            {/* White bar at the top of the modal */}
+            <div className="sticky top-0 left-0 right-0 bg-white shadow-md flex justify-end px-4 py-2 z-10">
+              <IconButton variant="ghost" onClick={closeModal} size="3">
+                <Cross1Icon color="#1e1e1e" className="w-5 h-5" />
+              </IconButton>
+            </div>
+            {/* Gallery content */}
+            <div className="p-4">
+              <ImageGallery
+                imagesInfoArray={fullAlbumImagesArray}
+                columnCount={"auto"}
+                columnWidth={500}
+                gapSize={24}
+              />
+            </div>
           </div>
         </div>
       )}
