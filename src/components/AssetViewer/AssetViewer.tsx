@@ -24,7 +24,7 @@ export function useAssetViewer() {
     setAsset(null);
     setIsOpen(false);
     setIsFullScreen(false);
-  }, [asset, setAsset, setIsOpen, setIsFullScreen]);
+  }, [setAsset, setIsOpen, setIsFullScreen]);
 
   return {
     openAssetViewer,
@@ -32,7 +32,48 @@ export function useAssetViewer() {
   };
 }
 
-export default memo(() => {
+const Content = ({
+  fileType,
+  asset,
+  isFullScreen,
+  handleFullScreenClick,
+  handleAssetDownload,
+  closeAssetViewer,
+}: {
+  fileType: string;
+  asset: Asset | null;
+  isFullScreen: boolean;
+  handleFullScreenClick: () => void;
+  handleAssetDownload: () => void;
+  closeAssetViewer: () => void;
+}) => {
+  if (!asset) return null;
+
+  switch (fileType) {
+    case "pdf":
+      return (
+        <PdfViewer
+          asset={asset}
+          isFullScreen={isFullScreen}
+          handleFullScreenClick={handleFullScreenClick}
+          handleAssetDownload={handleAssetDownload}
+          closeAssetViewer={closeAssetViewer}
+        />
+      );
+    case "image":
+      return (
+        <ImageViewer
+          asset={asset}
+          isFullScreen={isFullScreen}
+          handleFullScreenClick={handleFullScreenClick}
+          handleAssetDownload={handleAssetDownload}
+          closeAssetViewer={closeAssetViewer}
+        />
+      );
+  }
+};
+
+const AssetViewer = memo(() => {
   const { closeAssetViewer } = useAssetViewer();
   const { isOpen, isFullScreen, setIsFullScreen, asset, fileType } =
     useAssetViewerState((state) => state);
@@ -66,33 +107,6 @@ export default memo(() => {
     };
   }, [closeAssetViewer]);
 
-  const Content = () => {
-    if (!asset) return null;
-
-    switch (fileType) {
-      case "pdf":
-        return (
-          <PdfViewer
-            asset={asset}
-            isFullScreen={isFullScreen}
-            handleFullScreenClick={handleFullScreenClick}
-            handleAssetDownload={handleAssetDownload}
-            closeAssetViewer={closeAssetViewer}
-          />
-        );
-      case "image":
-        return (
-          <ImageViewer
-            asset={asset}
-            isFullScreen={isFullScreen}
-            handleFullScreenClick={handleFullScreenClick}
-            handleAssetDownload={handleAssetDownload}
-            closeAssetViewer={closeAssetViewer}
-          />
-        );
-    }
-  };
-
   const isOpenClassName = isOpen ? "show" : "";
   const contentClassName = isFullScreen
     ? `asset-viewer-content-full ${isOpenClassName}`
@@ -113,7 +127,14 @@ export default memo(() => {
               className={contentClassName}
             >
               <div id="modal-window" className={modalWindowClassName}>
-                <Content />
+                <Content
+                  fileType={fileType}
+                  asset={asset}
+                  isFullScreen={isFullScreen}
+                  handleFullScreenClick={handleFullScreenClick}
+                  handleAssetDownload={handleAssetDownload}
+                  closeAssetViewer={closeAssetViewer}
+                />
               </div>
             </div>
           </div>
@@ -123,3 +144,6 @@ export default memo(() => {
     </>
   );
 });
+
+AssetViewer.displayName = "AssetViewer";
+export default AssetViewer;
