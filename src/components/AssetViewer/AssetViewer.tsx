@@ -24,7 +24,7 @@ export function useAssetViewer() {
     setAsset(null);
     setIsOpen(false);
     setIsFullScreen(false);
-  }, [asset]);
+  }, [asset, setAsset, setIsOpen, setIsFullScreen]);
 
   return {
     openAssetViewer,
@@ -64,7 +64,7 @@ export default memo(() => {
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
     };
-  }, []);
+  }, [closeAssetViewer]);
 
   const Content = () => {
     if (!asset) return null;
