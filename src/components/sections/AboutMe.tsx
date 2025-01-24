@@ -1,7 +1,7 @@
 import TechnicalSkills from "../TechnicalSkills";
 import { useAssetViewer } from "../AssetViewer/AssetViewer";
 
-export default () => {
+export default function AboutMe() {
   return (
     <section id="about" className="scroll-mt-20 mb-20">
       <div className="flex flex-col gap-4 items-center">
@@ -18,7 +18,7 @@ export default () => {
       </div>
     </section>
   );
-};
+}
 
 const BioSummary = () => {
   return (
@@ -27,12 +27,12 @@ const BioSummary = () => {
         <div className="text-heading mx-auto text-xl">Summary</div>
       </div>
       <div className="mb-4">
-        I'm a software engineer with a strong analytical mindset and a passion
-        for creating intuitive and efficient solutions. My experience spans
-        full-stack development using modern tools like React.js, Next.js, and
-        Ruby on Rails. I've built custom UI components, developed APIs, and
-        optimized backend services, focusing on delivering secure, user-friendly
-        applications.
+        I&apos;m a software engineer with a strong analytical mindset and a
+        passion for creating intuitive and efficient solutions. My experience
+        spans full-stack development using modern tools like React.js, Next.js,
+        and Ruby on Rails. I&apos;ve built custom UI components, developed APIs,
+        and optimized backend services, focusing on delivering secure,
+        user-friendly applications.
       </div>
       <div>
         With a diverse background that includes earning a PhD in Earth Science

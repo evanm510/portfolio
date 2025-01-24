@@ -1,6 +1,6 @@
 import ContactForm from "../ContactForm";
 
-export default () => {
+export default function Contact() {
   return (
     <section id="contact" className="scroll-mt-20  mb-20">
       <div className="flex flex-col gap-4 items-center">
@@ -15,4 +15,4 @@ export default () => {
       </div>
     </section>
   );
-};
+}

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import AssetViewerHeader, { ZoomControl } from "./AssetViewerHeader";
 import { Asset } from "@/types/global";
-import { Flex } from "@radix-ui/themes";
 import {
   TransformWrapper,
   TransformComponent,
@@ -54,13 +53,13 @@ type ImageViewerProps = {
   closeAssetViewer: () => void;
 };
 
-export default ({
+export default function ImageViewer({
   asset,
   isFullScreen,
   handleFullScreenClick,
   handleAssetDownload,
   closeAssetViewer,
-}: ImageViewerProps) => {
+}: ImageViewerProps) {
   const [isLoading, setIsLoading] = useState(true);
 
   return (
@@ -104,4 +103,4 @@ export default ({
       </TransformWrapper>
     </div>
   );
-};
+}

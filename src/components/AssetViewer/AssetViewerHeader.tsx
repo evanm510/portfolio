@@ -2,8 +2,6 @@
 
 import React from "react";
 import {
-  ArrowLeftIcon,
-  ArrowRightIcon,
   ZoomInIcon,
   ZoomOutIcon,
   DownloadIcon,
@@ -11,7 +9,7 @@ import {
   ExitFullScreenIcon,
   Cross1Icon,
 } from "@radix-ui/react-icons";
-import { IconButton, Flex, Heading } from "@radix-ui/themes";
+import { IconButton } from "@radix-ui/themes";
 
 const buttonColor = "#282828";
 
@@ -89,16 +87,14 @@ type AssetViewHeaderProps = {
   closeAssetViewer: () => void;
 };
 
-export default ({
+export default function AssetViewerHeader({
   children,
   isFullScreen,
   assetName,
   handleFullScreenClick,
   handleAssetDownload,
   closeAssetViewer,
-}: AssetViewHeaderProps) => {
-  const headingMaxWidthClass = children ? "max-w-[140px]" : "max-w-[200px]";
-
+}: AssetViewHeaderProps) {
   return (
     <div
       className={`flex flex-row justify-between w-100 bg-gray-85 px-5 py-3 ${
@@ -119,4 +115,4 @@ export default ({
       </div>
     </div>
   );
-};
+}
