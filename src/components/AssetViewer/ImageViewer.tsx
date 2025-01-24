@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import AssetViewerHeader, { ZoomControl } from "./AssetViewerHeader";
 import { Asset } from "@/types/global";
-import { Flex } from "@radix-ui/themes";
 import {
   TransformWrapper,
   TransformComponent,
