@@ -15,7 +15,7 @@ export const NavBar = () => {
         <div className="text-gray-200">Evan Monroe</div>
         <ul className="flex gap-16">
           {navItems.map((item) => (
-            <li>
+            <li key={item.title}>
               <Link href={item.link}>
                 <div className="hover:bg-navHover px-4 py-2 rounded-md">
                   <div className="">{item.title}</div>
