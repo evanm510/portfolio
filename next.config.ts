@@ -1,7 +1,5 @@
 import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  output: "export", // Ensures static export
-};
+const nextConfig: NextConfig = {};
 
 export default nextConfig;
