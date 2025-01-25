@@ -45,7 +45,7 @@ const Buttons = () => {
           }}
         >
           <img
-            src="/icons/linkedInIcon.svg"
+            src="/icons/linkedinIcon.svg"
             alt="LinkedIn Icon"
             width={38}
             height={38}
