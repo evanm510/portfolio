@@ -32,7 +32,7 @@ const Buttons = () => {
           openAssetViewer({
             name: "Resume",
             type: "pdf",
-            hostPath: "http://localhost:3000/resume.pdf",
+            hostPath: "/resume.pdf",
           });
         }}
       >
