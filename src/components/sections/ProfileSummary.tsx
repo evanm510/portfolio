@@ -3,7 +3,6 @@ import Image from "next/image";
 import { Button } from "@/components/Button";
 import { IconButton } from "@/components/IconButton";
 import { useAssetViewer } from "../AssetViewer/AssetViewer";
-import { Loading } from "../Loading";
 
 export const ProfileSummary = () => {
   return (
@@ -45,8 +44,8 @@ const Buttons = () => {
             window.open("https://www.linkedin.com/in/evan-monroe-53a842162/");
           }}
         >
-          <Image
-            src="icons/linkedInIcon.svg"
+          <img
+            src="/icons/linkedInIcon.svg"
             alt="LinkedIn Icon"
             width={38}
             height={38}
@@ -57,8 +56,8 @@ const Buttons = () => {
             window.open("https://github.com/evanm510");
           }}
         >
-          <Image
-            src="icons/githubIconWhite.svg"
+          <img
+            src="/icons/githubIconWhite.svg"
             alt="GitHub Icon"
             width={38}
             height={38}
@@ -69,8 +68,8 @@ const Buttons = () => {
             window.open("mailto:evanm510@gmail.com");
           }}
         >
-          <Image
-            src="icons/gmailIcon.svg"
+          <img
+            src="/icons/gmailIcon.svg"
             alt="Gmail Icon"
             width={38}
             height={38}
