@@ -14,10 +14,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className="text-bodyText">
+    <html lang="en" className="h-full">
+      <body className="h-full overflow-auto text-bodyText">
         <NavBar />
-        {children}
+        <main className="pt-16">{children}</main>
         <AssetViewer />
       </body>
     </html>
