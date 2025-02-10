@@ -37,7 +37,7 @@ export const TechLogoList = ({
   size: number;
 }) => {
   return (
-    <div className="flex flex-row gap-10 items-center">
+    <div className="flex flex-wrap md:flex-nowrap justify-start lg:justify-between gap-6">
       {logos.map((logo, index) => (
         <TechLogo
           key={index}

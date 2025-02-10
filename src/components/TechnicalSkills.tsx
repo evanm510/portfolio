@@ -34,7 +34,7 @@ const tools = [
 
 export default function TechnicalSkills() {
   return (
-    <div className="bg-card shadow py-4 px-6 rounded-lg">
+    <div className="bg-card shadow py-4 px-6 rounded-lg w-full">
       <div className="flex items-center">
         <div className="text-heading mx-auto text-xl">Technical Skills</div>
       </div>
