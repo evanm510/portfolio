@@ -7,7 +7,7 @@ export default function AboutMe() {
       <div className="flex flex-col gap-4 items-center">
         <div className="text-heading text-3xl mx-auto">About Me</div>
         <div className="w-[90%] max-w-[1400px]">
-          <div className="flex gap-4">
+          <div className="flex flex-col md:flex-row gap-4">
             <div className="flex flex-col gap-4">
               <BioSummary />
               <Education />

@@ -13,15 +13,15 @@ export default function ExperienceSection({
 }: ExperienceSectionProps) {
   return (
     <div className="w-[90%] w-[90%] max-w-[1400px] bg-card shadow p-6 rounded-lg">
-      <div className="text-heading  w-100 flex flex-row justify-between mb-4">
-        <div className="flex items-center gap-2">
+      <div className="text-heading w-100 flex flex-col md:flex-row justify-between mb-4">
+        <div className="flex flex-col md:flex-row md:items-center gap-2">
           <div className="text-2xl">{experienceData.title}</div>
-          <div>-</div>
+          <div className="hidden md:block">-</div>
           <div className="italic text-2xl">{experienceData.position}</div>
         </div>
         <div className="italic">{experienceData.dateRange}</div>
       </div>
-      <div className="flex flex-row gap-6">
+      <div className="flex flex-col lg:flex-row gap-6">
         <div>
           <div className="italic mb-2">{experienceData.description}</div>
           <div className="text-heading font-bold italic">
@@ -50,7 +50,9 @@ export default function ExperienceSection({
             Learn More
           </Button>
         </div>
-        <TechLogoList logos={experienceData.technologies} size={40} />
+        <div className="ml-auto">
+          <TechLogoList logos={experienceData.technologies} size={40} />
+        </div>
       </div>
     </div>
   );

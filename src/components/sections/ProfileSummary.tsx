@@ -6,8 +6,11 @@ import { useAssetViewer } from "../AssetViewer/AssetViewer";
 
 export const ProfileSummary = () => {
   return (
-    <section id="home" className="h-screen flex flex-row gap-12 items-center">
-      <div className="flex flex-col gap-4">
+    <section
+      id="home"
+      className="h-[calc(100vh-4rem)] flex flex-col-reverse md:flex-row gap-12 items-center justify-center relative"
+    >
+      <div className="flex flex-col gap-4 text-center md:text-left">
         <div className="text-heading text-5xl">Evan Monroe</div>
         <div className="w-80">
           PhD geologist turned software engineer with a passion for full-stack
@@ -15,6 +18,7 @@ export const ProfileSummary = () => {
         </div>
         <Buttons />
       </div>
+
       <div className="w-[300px] h-[300px] rounded-full overflow-hidden">
         <Image src="/headshot.jpeg" alt="Headshot" width={300} height={300} />
       </div>

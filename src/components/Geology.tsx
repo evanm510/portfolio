@@ -4,11 +4,11 @@ import { useAssetViewer } from "./AssetViewer/AssetViewer";
 export default function Geology() {
   const { openAssetViewer } = useAssetViewer();
   return (
-    <div className="w-[90%] bg-card p-6 rounded-lg">
+    <div className="w-[90%] bg-card py-2 md:p-6 rounded-lg">
       <div className="flex justify-center mb-4">
         <div className="text-2xl">Geology</div>
       </div>
-      <div className="flex gap-10">
+      <div className="flex flex-col lg:flex-row gap-10">
         <div className="flex flex-col gap-6 flex-1">
           <div>
             Before transitioning to software engineering, I earned a PhD in
@@ -32,7 +32,7 @@ export default function Geology() {
           </div>
         </div>
         <div className="flex-2">
-          <div className="w-[500px] h-[400px] overflow-hidden rounded-lg">
+          <div className="w-full h-auto lg:w-[500px] lg:h-[400px] overflow-hidden rounded-lg">
             <img
               src="/geology_image.jpg"
               alt="Geology"
@@ -43,7 +43,7 @@ export default function Geology() {
       </div>
       <div className="flex flex-col items-center justify-center mt-6 gap-2">
         <div className="text-heading font-bold">Check out my Dissertation:</div>
-        <div className="flex flex-row gap-6">
+        <div className="flex flex-row justify-center flex-wrap gap-6">
           <Button
             onClick={() => {
               openAssetViewer({

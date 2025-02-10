@@ -25,7 +25,7 @@ export default function Music() {
   };
 
   return (
-    <div className="w-full px-20 py-6">
+    <div className="w-full px-4 py-2 md:px-20 md:py-6">
       <div className="text-2xl text-center mb-4">Music</div>
       <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
         <iframe
