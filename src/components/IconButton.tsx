@@ -10,12 +10,11 @@ export const IconButton = ({
   onClick: () => void;
 }) => {
   return (
-    <div
+    <button
       className="hover:scale-110 transform transition-transform duration-300 cursor-pointer"
       onClick={() => onClick()}
-      onTouchStart={() => onClick()}
     >
       {children}
-    </div>
+    </button>
   );
 };
