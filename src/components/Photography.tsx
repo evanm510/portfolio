@@ -28,7 +28,7 @@ export default function Photography() {
   };
 
   return (
-    <div className="px-20 py-6">
+    <div className="px-4 py-2 md:px-20 md:py-6">
       <div className="flex justify-center mb-4">
         <div className="text-2xl">Photography</div>
       </div>
