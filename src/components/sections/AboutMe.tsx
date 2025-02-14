@@ -80,7 +80,7 @@ const Education = () => {
           openAssetViewer({
             name: "UC Santa Barbara Degree",
             type: "image",
-            hostPath: "/oregon_state_degree.jpg",
+            hostPath: "/ucsb_degree.jpg",
           });
         }}
       >
