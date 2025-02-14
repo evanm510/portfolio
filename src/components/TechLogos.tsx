@@ -18,7 +18,6 @@ export const TechLogo = ({ imageSrc, text, size }: TechLogoProps) => {
             width={size}
             height={size}
             style={{ width: `${size}px`, height: `${size}px` }}
-            className="hover:scale-110 transition-transform duration-400"
           />
         </div>
       </Tooltip>
