@@ -60,11 +60,3 @@ export const sliderAlbumImages = [
     alt: "Portfolio image slider 15",
   },
 ];
-
-export const fullAlbumImages = Array.from({ length: 84 }, (_, index) => {
-  const number = index + 1; // Start from 1
-  return {
-    imageSrc: `/portfolio_album/portfolio_photo-${number}.jpg`,
-    alt: `Portfolio photo ${number}`,
-  };
-});
