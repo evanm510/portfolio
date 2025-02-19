@@ -68,7 +68,7 @@ export default function Photography() {
             </div>
             <div className="p-4">
               {[...Array(loadCount)].map((_, index) => (
-                <div key={index} className="mb-8">
+                <div key={index}>
                   <ImageGallery
                     imagesInfoArray={generateImageArray(index * 20, 20)}
                     columnCount={"auto"}
@@ -78,7 +78,7 @@ export default function Photography() {
                 </div>
               ))}
               {loadCount < 3 && (
-                <div className="flex justify-center mt-4">
+                <div className="flex justify-center mb-4">
                   <Button onClick={handleLoadMore}>Load More</Button>
                 </div>
               )}
