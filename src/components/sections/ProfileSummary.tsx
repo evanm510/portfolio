@@ -8,7 +8,7 @@ export const ProfileSummary = () => {
   return (
     <section
       id="home"
-      className="h-[calc(100vh-4rem)] flex flex-col-reverse md:flex-row gap-12 items-center justify-center relative"
+      className="h-screen flex flex-col-reverse md:flex-row gap-12 items-center justify-center relative"
     >
       <div className="flex flex-col gap-4 text-center md:text-left">
         <div className="text-heading text-5xl">Evan Monroe</div>
