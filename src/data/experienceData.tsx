@@ -107,7 +107,7 @@ export const threadCloudExperienceData: ExperienceData = {
         "Assisted in database schema design and implemented changes to meet application requirements.",
     },
   ],
-  learnMoreUrl: "https://app.threadcloud.net/",
+  learnMoreUrl: "",
   technologies: [
     { imageSrc: "/tech-logos/react.svg", text: "React.js" },
     { imageSrc: "/tech-logos/rubyonrails.svg", text: "Ruby on Rails" },
