@@ -15,6 +15,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="h-full">
+      <head>
+        <link rel="icon" href="/favicon.svg" />
+      </head>
       <body className="h-full overflow-auto text-bodyText">
         <NavBar />
         <main className="pt-16">{children}</main>
