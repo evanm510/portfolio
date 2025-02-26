@@ -27,12 +27,11 @@ const BioSummary = () => {
         <div className="text-heading mx-auto text-xl">Summary</div>
       </div>
       <div className="mb-4">
-        I&apos;m a software engineer with a strong analytical mindset and a
-        passion for creating intuitive and efficient solutions. My experience
-        spans full-stack development using modern tools like React.js, Next.js,
-        and Ruby on Rails. I&apos;ve built custom UI components, developed APIs,
-        and optimized backend services, focusing on delivering secure,
-        user-friendly applications.
+        I&apos;m a full-stack software engineer with expertise in building
+        scalable front-end architectures, API integrations, and backend services
+        using modern frameworks such as React.js, Next.js, and Ruby on Rails.
+        Committed to delivering high-quality, performant applications through
+        clean, maintainable code and innovative problem-solving.
       </div>
       <div>
         With a diverse background that includes earning a PhD in Earth Science
